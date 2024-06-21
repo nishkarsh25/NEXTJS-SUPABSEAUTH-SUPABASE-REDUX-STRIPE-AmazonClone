@@ -6,7 +6,10 @@ import CategoryWiseProduct from './shared/CategoryWiseProduct';
 import Link from "next/link";
 
 const HomePage = () => {
-  
+  const { mensProduct,
+    getMensClothing,
+    womensProduct,
+    getWomensClothing } = useSupabase();
 
   
 
