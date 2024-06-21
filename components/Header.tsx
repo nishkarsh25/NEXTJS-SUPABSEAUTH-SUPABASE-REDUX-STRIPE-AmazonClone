@@ -25,7 +25,8 @@ const itemList = [
 ]
 
 const Header = () => {
-    
+    const [query, setQuery] = useState<string>("");
+    const [user, setUser] = useState<any>(null);
     
 
 
