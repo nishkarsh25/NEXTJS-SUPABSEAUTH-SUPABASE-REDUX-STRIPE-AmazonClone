@@ -11,6 +11,7 @@ const initialState:CartSate = {
 
 const cartSlice = createSlice({
     name:"cart",
+    
     initialState,
     
 });
