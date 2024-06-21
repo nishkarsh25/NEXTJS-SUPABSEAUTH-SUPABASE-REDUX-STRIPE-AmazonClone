@@ -6,7 +6,7 @@ import { useAppSelector } from '@/lib/supabase/hooks/redux';
 import { getCart } from '@/redux/cartSlice';
 
 const Cart = () => {
-    
+    const cart = useAppSelector(getCart);
     
     
 }
