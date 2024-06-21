@@ -57,7 +57,18 @@ export const useSupabase = () => {
       console.log(error);
     }
   };
-  
+  const getWomensClothing = async () => {
+    let { data, error } = await supabase
+      .from("product")
+      .select("*")
+      .ilike("category", `women's clothing`);
+    if (data) {
+      setWomensProduct(data);
+    }
+    if (error) {
+      console.log(error);
+    }
+  };
 
   
 };
