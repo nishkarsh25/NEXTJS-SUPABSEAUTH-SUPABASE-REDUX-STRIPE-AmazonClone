@@ -30,3 +30,4 @@ const AddToCardContainer = ({ product }: { product: any }) => {
     )
 }
 
+export default AddToCardContainer
