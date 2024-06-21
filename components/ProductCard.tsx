@@ -22,3 +22,4 @@ const ProductCard = ({ product }: { product: any }) => {
     )
 }
 
+export default ProductCard
