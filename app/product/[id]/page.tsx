@@ -7,7 +7,9 @@ import React, { useEffect } from 'react'
 const ProductPage = () => {
     const { id } = useParams();
     const { singleProduct, getSingleProduct } = useSupabase();
-    
+    useEffect(() => {
+        getSingleProduct(Number(id));
+    }, [id, getSingleProduct])
    
     
 }
