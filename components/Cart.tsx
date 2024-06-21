@@ -11,6 +11,13 @@ const Cart = () => {
     cart.forEach((item:any) => {
         totalPrice += item.price * item.quantity;
     });
-    
+    return (
+        <div className='w-[80%] mx-auto mt-10'>
+            <div className='flex w-full justify-between'>
+                <ShoppingCart cart={cart} totalPrice={totalPrice}/>
+                <ProccedToBuy length={cart.length} totalPrice={totalPrice}/>
+            </div>
+        </div>
+    )
 }
 
