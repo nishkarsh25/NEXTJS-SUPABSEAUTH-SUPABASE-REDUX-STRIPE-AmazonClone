@@ -11,7 +11,10 @@ const HomePage = () => {
     womensProduct,
     getWomensClothing } = useSupabase();
 
-  
+  useEffect(() => {
+    getMensClothing();
+    getWomensClothing();
+  }, [getMensClothing,getWomensClothing])
 
 
 
