@@ -27,13 +27,22 @@ const itemList = [
 const Header = () => {
     const [query, setQuery] = useState<string>("");
     const [user, setUser] = useState<any>(null);
-    
+    const router = useRouter();
 
 
-    
+    const cart = useAppSelector(getCart);
 
-    
-    
+    const searchHandler = () => {
+        router.push(`/search/${query}`);
+    }
+
+    useEffect(()=>{
+        const getUserData = async () => {
+            const {data:{user}} = await supabase.auth.getUser();
+            setUser(user);
+        }
+        getUserData();
+    },[])
  
     
 }
