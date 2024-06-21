@@ -8,7 +8,9 @@ const SearchPage = () => {
     const { query } = useParams();
     const {filterData,getFilteredData} = useSupabase();
 
-    
+    useEffect(()=>{
+        getFilteredData(query.toString());
+    },[query,getFilteredData]);
  
     
    
