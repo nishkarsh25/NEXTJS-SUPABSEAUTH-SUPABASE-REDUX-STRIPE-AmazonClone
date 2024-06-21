@@ -39,3 +39,4 @@ const SingleProduct = ({ singleProduct }: { singleProduct: any }) => {
     )
 }
 
+export default SingleProduct
