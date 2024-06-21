@@ -13,6 +13,10 @@ const SearchPage = () => {
     },[query,getFilteredData]);
  
     
-   
+    return (
+        <div>
+            <SearchResult filterData = {filterData}/>
+        </div>
+    )
 }
 
