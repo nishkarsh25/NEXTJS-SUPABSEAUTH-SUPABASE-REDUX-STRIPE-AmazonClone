@@ -51,4 +51,3 @@ export const {addToCart, removeFromTheCart, incrementQuantity, decrementQuantity
 
 export const getCart = (state: RootState) => state.cart.cart
 
-export default cartSlice.reducer;
