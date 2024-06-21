@@ -9,3 +9,4 @@ const Subtotal = ({length,left, totalPrice}:{length:number,left:boolean, totalPr
   )
 }
 
+export default Subtotal
