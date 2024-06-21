@@ -5,7 +5,8 @@ import { useParams } from 'next/navigation'
 import React, { useEffect } from 'react'
 
 const SearchPage = () => {
-    
+    const { query } = useParams();
+    const {filterData,getFilteredData} = useSupabase();
 
     
  
