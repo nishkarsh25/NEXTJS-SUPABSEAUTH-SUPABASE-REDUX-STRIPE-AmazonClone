@@ -11,6 +11,11 @@ const ProductPage = () => {
         getSingleProduct(Number(id));
     }, [id, getSingleProduct])
    
-    
+    return (
+        <div >
+            <SingleProduct singleProduct={singleProduct}/>
+           
+        </div>
+    )
 }
 
