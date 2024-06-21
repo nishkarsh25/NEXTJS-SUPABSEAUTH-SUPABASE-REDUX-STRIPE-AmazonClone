@@ -10,7 +10,19 @@ import { useAppSelector } from '@/lib/supabase/hooks/redux';
 import { getCart } from '@/redux/cartSlice';
 import { supabase } from '@/lib/supabase/products';
 
-
+const itemList = [
+    "All",
+    "Fresh",
+    "Amazon miniTV",
+    "Sell",
+    "Gift Cards",
+    "Baby",
+    "Buy Again",
+    "Browsing History",
+    "Amazon Pay",
+    "Gift Ideas",
+    "Health, Household & Personal Care"
+]
 
 
 
