@@ -60,3 +60,4 @@ const ShoppingCart = ({cart, totalPrice}:{cart:any, totalPrice:number}) => {
     )
 }
 
+export default ShoppingCart
