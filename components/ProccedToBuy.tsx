@@ -18,3 +18,4 @@ const ProccedToBuy = ({ length, totalPrice }: { length: number, totalPrice: numb
     )
 }
 
+export default ProccedToBuy
