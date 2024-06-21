@@ -28,3 +28,4 @@ const SearchResult = ({ filterData }: { filterData: any }) => {
     )
 }
 
+export default SearchResult
