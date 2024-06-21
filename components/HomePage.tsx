@@ -5,5 +5,13 @@ import { useSupabase } from '@/lib/supabase/hooks/useSupabase';
 import CategoryWiseProduct from './shared/CategoryWiseProduct';
 import Link from "next/link";
 
+const HomePage = () => {
+  
 
+  
+
+
+
+  
+}
 
