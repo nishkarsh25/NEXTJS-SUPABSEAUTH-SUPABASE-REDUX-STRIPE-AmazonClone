@@ -70,5 +70,16 @@ export const useSupabase = () => {
     }
   };
 
-  
+  return {
+    products,
+    getDataFromSupabase,
+    filterData,
+    getFilteredData,
+    singleProduct,
+    getSingleProduct,
+    mensProduct,
+    getMensClothing,
+    womensProduct,
+    getWomensClothing,
+  };
 };
