@@ -6,7 +6,7 @@ import { clearAllCart, decrementQuantity, incrementQuantity, removeFromTheCart }
 import Subtotal from './shared/Subtotal';
 
 const ShoppingCart = ({cart, totalPrice}:{cart:any, totalPrice:number}) => {
-    
+    const dispatch = useAppDispatch();
     
 }
 
