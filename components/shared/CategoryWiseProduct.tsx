@@ -32,3 +32,4 @@ const CategoryWiseProduct = ({ product }: { product: any }) => {
     )
 }
 
+export default CategoryWiseProduct
