@@ -33,7 +33,18 @@ export const useSupabase = () => {
     }
   };
 
-  
+  const getSingleProduct = async (id: number) => {
+    let { data, error } = await supabase
+      .from("product")
+      .select("*")
+      .eq("id", id);
+    if (data) {
+      setSingleProduct(data);
+    }
+    if (error) {
+      console.log(error);
+    }
+  };
   
   
 
