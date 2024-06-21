@@ -7,7 +7,10 @@ import { getCart } from '@/redux/cartSlice';
 
 const Cart = () => {
     const cart = useAppSelector(getCart);
-    
+    let totalPrice = 0;
+    cart.forEach((item:any) => {
+        totalPrice += item.price * item.quantity;
+    });
     
 }
 
