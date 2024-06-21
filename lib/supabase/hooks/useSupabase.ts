@@ -9,7 +9,15 @@ export const useSupabase = () => {
   const [mensProduct, setMensProduct] = useState<any>([]);
   const [womensProduct, setWomensProduct] = useState<any>([]);
 
-  
+  const getDataFromSupabase = async () => {
+    let { data, error } = await supabase.from("product").select("*");
+    if (data) {
+      setProducts(data);
+    }
+    if (error) {
+      console.log(error);
+    }
+  };
   
 
   
