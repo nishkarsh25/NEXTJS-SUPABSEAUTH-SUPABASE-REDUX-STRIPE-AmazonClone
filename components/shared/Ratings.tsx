@@ -16,3 +16,4 @@ const Ratings = ({ratings}:{ratings:any}) => {
     )
 }
 
+export default Ratings
