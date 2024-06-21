@@ -18,7 +18,20 @@ export const useSupabase = () => {
       console.log(error);
     }
   };
-  
+  const getFilteredData = async (query: string) => {
+    let { data, error } = await supabase
+      .from("product")
+      .select("*")
+      .or(
+        `title.ilike.%${query}%, description.ilike.%${query}%, category.ilike.%${query}%`
+      ); // cloth
+    if (data) {
+      setFilterData(data);
+    }
+    if (error) {
+      console.log(error);
+    }
+  };
 
   
   
