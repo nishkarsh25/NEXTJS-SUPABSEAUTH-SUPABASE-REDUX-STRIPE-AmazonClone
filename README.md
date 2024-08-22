@@ -42,7 +42,7 @@ AmazonClone is a full-stack e-commerce application built with Next.js, TypeScrip
 
 ## Live Demo
 
-You can try out the live demo of the app [here](https://nextjs-clerkauth-mongodb-serveractions-linked-in-clone.vercel.app/).
+You can try out the live demo of the app [here](https://nextjs-supabseauth-supabase-redux-stripe-amazon-clone.vercel.app/).
 
 ## Folder Structure
 
